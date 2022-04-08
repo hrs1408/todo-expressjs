@@ -1,0 +1,100 @@
+.home-page{
+    background-color: rgb(41, 41, 41);
+}
+.header{
+    background-color: white;
+    display: flex;
+    height: 82px;
+    .logo{
+        margin-left: 20px;
+        align-self: center;
+    }
+    .nav-bar{
+        height: 100%;
+        display: flex;
+        align-self: center;
+        .nav-item{
+            a{
+                color: #666;
+                text-decoration: none;
+            }
+            font-weight: bold;
+            height: 81px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px;
+            color: #fff;
+            text-decoration: none;
+            padding: 0 20px;
+            cursor: pointer;
+            &:hover{
+                a{
+                    color:black;
+                }
+                border-bottom: 1px solid black;
+                transition: all ;
+            }
+        }
+    }
+    .button-group{
+        margin-left: auto;
+        display: flex;
+        align-items: center;
+        .button-item{
+            font-size: 20px;
+            padding: 0 15px;
+            cursor: pointer;
+            &:hover{
+                color: #000;
+            }
+        }
+    }
+}
+
+.slide-bar{
+    .carousel-indicators{
+        .active{
+            background-color: red;
+        }
+    }
+}
+
+.products{
+    .product-links{
+        position: relative;
+        filter:brightness(50%);
+        .text-products{
+            text-align: center;
+            color: white;
+            position: absolute;
+        }
+        &:hover{
+            filter:brightness(100%);
+            transition: all .3s;
+        }
+    }
+}
+
+.banner{
+    img{
+        filter: brightness(70%);
+    }
+    &:hover{
+        img{
+            filter: brightness(100%);
+            transition: all .3s;
+        }
+    }
+}
+
+.footer-links{
+    text-align: left;
+    a{
+        text-decoration: none;
+        &:hover{
+            color: #000;
+            text-decoration: underline;
+        }
+    }
+}

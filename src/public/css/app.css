@@ -1,0 +1,72 @@
+.home-page {
+  background-color: #292929; }
+
+.header {
+  background-color: white;
+  display: flex;
+  height: 82px; }
+  .header .logo {
+    margin-left: 20px;
+    align-self: center; }
+  .header .nav-bar {
+    height: 100%;
+    display: flex;
+    align-self: center; }
+    .header .nav-bar .nav-item {
+      font-weight: bold;
+      height: 81px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 18px;
+      color: #fff;
+      text-decoration: none;
+      padding: 0 20px;
+      cursor: pointer; }
+      .header .nav-bar .nav-item a {
+        color: #666;
+        text-decoration: none; }
+      .header .nav-bar .nav-item:hover {
+        border-bottom: 1px solid black;
+        transition: all; }
+        .header .nav-bar .nav-item:hover a {
+          color: black; }
+  .header .button-group {
+    margin-left: auto;
+    display: flex;
+    align-items: center; }
+    .header .button-group .button-item {
+      font-size: 20px;
+      padding: 0 15px;
+      cursor: pointer; }
+      .header .button-group .button-item:hover {
+        color: #000; }
+
+.slide-bar .carousel-indicators .active {
+  background-color: red; }
+
+.products .product-links {
+  position: relative;
+  filter: brightness(50%); }
+  .products .product-links .text-products {
+    text-align: center;
+    color: white;
+    position: absolute; }
+  .products .product-links:hover {
+    filter: brightness(100%);
+    transition: all .3s; }
+
+.banner img {
+  filter: brightness(70%); }
+
+.banner:hover img {
+  filter: brightness(100%);
+  transition: all .3s; }
+
+.footer-links {
+  text-align: left; }
+  .footer-links a {
+    text-decoration: none; }
+    .footer-links a:hover {
+      color: #000;
+      text-decoration: underline; }
