@@ -1,27 +1,36 @@
-const express = require('express');
+const express = require("express");
 const app = express();
 const port = 3000;
-const { engine } = require('express-handlebars');
-const path = require('path');
-const morgan = require('morgan');
+const { engine } = require("express-handlebars");
+const path = require("path");
+const morgan = require("morgan");
 
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, "public")));
 
-app.engine('.hbs', engine({ extname: '.hbs' }));
+app.engine(".hbs", engine({ extname: ".hbs" }));
 
-app.set('view engine', '.hbs');
+app.set("view engine", ".hbs");
 
-app.set('views', path.join(__dirname, 'resources/views'));
+app.set("views", path.join(__dirname, "resources/views"));
 
-app.listen(port, () => { console.log(`Server is running on port ${port}`) });
+app.listen(port, () => {
+  console.log(`Server is running on port ${port}`);
+});
 
 app.use(morgan("combined"));
 
 app.get("/", (req, res) => {
-    res.render('home');
+  res.render("home");
 });
 
 app.get("/product", (req, res) => {
-    res.render('product');
+  res.render("product");
 });
 
+app.get("/login", (req, res) => {
+  res.render("login");
+});
+
+app.get("/register", (req, res) => {
+    res.render("register");
+});

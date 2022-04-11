@@ -169,6 +169,8 @@ body {
       font-size: 20px;
       padding: 0 15px;
       cursor: pointer; }
+      .header .button-group .button-item a {
+        color: #000; }
       .header .button-group .button-item:hover {
         color: #000; }
 
@@ -234,3 +236,57 @@ body {
     .footer-links a:hover {
       color: #000;
       text-decoration: underline; }
+
+.explore-product {
+  display: flex;
+  justify-content: space-around; }
+  .explore-product .explore-product-link {
+    width: 158px;
+    height: 109px; }
+    .explore-product .explore-product-link .img-explore-product img {
+      width: 97px;
+      height: 77px; }
+
+.product .product-thumb .image {
+  text-align-last: center;
+  border-bottom: 1px solid #ccc; }
+
+.product .product-thumb .title {
+  font-weight: bold;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  border-bottom: 1px solid #ccc; }
+  .product .product-thumb .title a {
+    color: black; }
+
+.product .product-thumb .description {
+  border-bottom: 1px solid #ccc; }
+  .product .product-thumb .description li {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; }
+
+.product .product-thumb .price {
+  text-align: right;
+  border-bottom: 1px solid #ccc; }
+  .product .product-thumb .price .price-new {
+    color: #cc0000;
+    font-weight: bold;
+    font-size: 24px; }
+  .product .product-thumb .price .price-old {
+    text-decoration: line-through;
+    color: #292929;
+    font-size: 11px; }
+
+.product .product-thumb .button {
+  text-align: right; }
+  .product .product-thumb .button .btn {
+    border-radius: 20px; }
+
+.login-form {
+  align-items: center; }
+
+.form-check-input:checked {
+  background-color: #cc0000;
+  border: #cc0000; }
