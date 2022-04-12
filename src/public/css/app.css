@@ -134,6 +134,31 @@ body {
   background-color: white;
   display: flex;
   height: 82px; }
+  .header .btn-3line {
+    align-self: center; }
+    .header .btn-3line div {
+      width: 35px;
+      height: 3px;
+      background-color: black;
+      margin: 6px 0; }
+  .header .accordion-item {
+    padding: 0;
+    border: none; }
+    .header .accordion-item .accordion-button {
+      font-weight: bold;
+      outline: none;
+      box-shadow: none; }
+      .header .accordion-item .accordion-button:focus {
+        border-color: #cc0000; }
+      .header .accordion-item .accordion-button:not(.collapsed) {
+        background-color: #fff;
+        color: #cc0000; }
+    .header .accordion-item .accordion-body li:hover {
+      cursor: pointer; }
+      .header .accordion-item .accordion-body li:hover a {
+        transition: none;
+        font-weight: bold;
+        color: #cc0000; }
   .header .logo {
     margin-left: 20px;
     margin-right: 20px;

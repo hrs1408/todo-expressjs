@@ -1,36 +1,191 @@
 <div class="container p-0">
-    <nav class="header">
-        <div class="logo">
-            <a href="/">
-                <img src="https://storage-asset.msi.com/frontend/imgs/logo.png" alt="">
-            </a>
+  <nav class="header">
+    <a
+      class="btn d-block d-xl-none btn-3line"
+      data-bs-toggle="offcanvas"
+      href="#offcanvasExample"
+      role="button"
+      aria-controls="offcanvasExample"
+    >
+      <div></div>
+      <div></div>
+      <div></div>
+    </a>
+    <div
+      class="offcanvas offcanvas-start"
+      tabindex="-1"
+      id="offcanvasExample"
+      aria-labelledby="offcanvasExampleLabel"
+    >
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasExampleLabel">MSI</h5>
+        <button
+          type="button"
+          class="btn-close text-reset"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body">
+        <div>
+          <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button
+                  class="accordion-button"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseOne"
+                  aria-expanded="true"
+                  aria-controls="collapseOne"
+                >
+                  SẢN PHẨM
+                </button>
+              </h2>
+              <div
+                id="collapseOne"
+                class="accordion-collapse collapse show"
+                aria-labelledby="headingOne"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  <ul>
+                    <li><a href="" class="btn">Laptops</a></li>
+                    <li><a href="" class="btn">Desktops</a></li>
+                    <li><a href="" class="btn">Monitors</a></li>
+                    <li><a href="" class="btn">Graphics Cards</a></li>
+                    <li><a href="" class="btn">Motherboards</a></li>
+                    <li><a href="" class="btn">Gaming Gears</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseTwo"
+                  aria-expanded="false"
+                  aria-controls="collapseTwo"
+                >
+                  GIẢI PHÁP ODM
+                </button>
+              </h2>
+              <div
+                id="collapseTwo"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingTwo"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  <ul>
+                    <li><a href="" class="btn">Server, Networking & IoT</a></li>
+                    <li><a href="" class="btn">Automotive & Commercial Solution</a></li>
+                    <li><a href="" class="btn">FUNTORO Solution</a></li>
+                    <li><a href="" class="btn">Autonomous Mobile Robot (AMR)</a></li>
+                    <li><a href="" class="btn">AIoT & Industrial Solutions</a></li>
+                    <li><a href="" class="btn">Rugged Tablet</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThree">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseThree"
+                  aria-expanded="false"
+                  aria-controls="collapseThree"
+                >
+                  CÓ GÌ MỚI
+                </button>
+              </h2>
+              <div
+                id="collapseThree"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingThree"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  <ul>
+                    <li><a href="" class="btn">Showcase Arena</a></li>
+                    <li><a href="" class="btn">Khuyến mãi</a></li>
+                    <li><a href="" class="btn">Upcoming Events</a></li>
+                    <li><a href="" class="btn">Blog Articles</a></li>
+                    <li><a href="" class="btn">Customer Stories</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingFour">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseFour"
+                  aria-expanded="false"
+                  aria-controls="collapseFour"
+                >
+                  HỖ TRỢ
+                </button>
+              </h2>
+              <div
+                id="collapseFour"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingFour"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  <ul>
+                    <li><a href="" class="btn">Sản Phẩm</a></li>
+                    <li><a href="" class="btn">Chính sách</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="nav-bar ms-2">
-            <div class="nav-item">
-                <a href="/product">SẢN PHẨM</a>
-            </div>
-            <div class="nav-item">
-                <a href="/solution">GIẢI PHÁP ODM</a>
-            </div>
-            <div class="nav-item">
-                <a href="/news">CÓ GÌ MỚI</a>
-            </div>
-            <div class="nav-item">
-                <a href="/support">HỖ TRỢ</a>
-            </div>
-        </div>
-        <div class="button-group d-flex">
-            <div class="button-item">
-                <a href="/login">
-                    <i class="far fa-user"></i>
-                </a>
-            </div>
-            <div class="button-item">
-                <i class="far fa-map-marker-alt"></i>
-            </div>
-            <div class="button-item">
-                <i class="far fa-search"></i>
-            </div>
-        </div>
-    </nav>
+      </div>
+    </div>
+    <div class="logo">
+      <a href="/">
+        <img
+          src="https://storage-asset.msi.com/frontend/imgs/logo.png"
+          alt=""
+        />
+      </a>
+    </div>
+    <div class="nav-bar ms-2 d-none d-xl-flex">
+      <div class="nav-item">
+        <a href="/product">SẢN PHẨM</a>
+      </div>
+      <div class="nav-item">
+        <a href="/solution">GIẢI PHÁP ODM</a>
+      </div>
+      <div class="nav-item">
+        <a href="/news">CÓ GÌ MỚI</a>
+      </div>
+      <div class="nav-item">
+        <a href="/support">HỖ TRỢ</a>
+      </div>
+    </div>
+    <div class="button-group d-flex">
+      <div class="button-item">
+        <a href="/login">
+          <i class="far fa-user"></i>
+        </a>
+      </div>
+      <div class="button-item">
+        <i class="far fa-map-marker-alt"></i>
+      </div>
+      <div class="button-item">
+        <i class="far fa-search"></i>
+      </div>
+    </div>
+  </nav>
 </div>

@@ -3,7 +3,46 @@
 .home-page {
   background-color: rgb(41, 41, 41);
 }
+
 .header {
+  .btn-3line {
+    align-self: center;
+    div {
+      width: 35px;
+      height: 3px;
+      background-color: black;
+      margin: 6px 0;
+    }
+  }
+  .accordion-item {
+    padding: 0;
+    border: none;
+    .accordion-button {
+      font-weight: bold;
+      outline: none;
+      box-shadow: none;
+      &:focus {
+        border-color: #cc0000;
+      }
+      &:not(.collapsed) {
+        background-color: #fff;
+        color: #cc0000;
+        &::after {
+        }
+      }
+    }
+    .accordion-body{
+      li:hover{
+        cursor: pointer;
+        a{
+          transition: none;
+          font-weight: bold;
+          color: #cc0000;
+        }
+      }
+    }
+  }
+
   background-color: white;
   display: flex;
   height: 82px;
